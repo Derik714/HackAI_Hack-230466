@@ -18,8 +18,8 @@ start_address = "agent1qtegd7lf58rpldn3qe4x8lrk6swlj0ypd53zgy4rf4xcrzewx72xzm8lj
 @bob.on_message(model=Message) #This defines an condition where if bob receives a message on its endpoint, the below asynchronous function "message_handler" would be executed
 async def message_handler(ctx: Context, sender: str, msg: Message):
         ctx.logger.info("Recieved message "+msg.message)
-        Tmax,Tmin,Val = msg.message.split(',')
-        coloured_message = colored(TA.verify_temp(float(Tmax), float(Tmin), float(Val))+"\n", "green")#Adding a color to the messsage for clarity
+        Tmax,Tmin,Val = msg.message.split(',') #Splitting the comma-separated values obtained as a messasge from client_agent
+        coloured_message = colored(TA.verify_temp(float(Tmax), float(Tmin), float(Val))+"\n", "green")#Adding a color to the messsage for clarity, also calling the method defined in src/agents/Scripts/Temp_alert.py by passing the values
         await ctx.send(start_address, Message(message=coloured_message))#sending the message to the starter agent
 if __name__ == "__main__":
     bob.run()
