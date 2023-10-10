@@ -1,7 +1,3 @@
-Certainly, here's an improved version of your README.md with a more professional appearance and formatting:
-
----
-
 # HackAI_Hack-230466
 
 ## Temperature Alert Agent
