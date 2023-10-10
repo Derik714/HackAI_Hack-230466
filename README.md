@@ -1,5 +1,5 @@
 # HackAI_Hack-230466
-Temperature Alert Agent
+# Temperature Alert Agent
 The Temperature Alert Agent is a versatile tool built using the uAgent library that empowers users to stay informed about real-time weather conditions in their chosen locations. This project is designed to provide users with a personalized temperature monitoring system, ensuring they receive timely alerts when the weather falls outside their preferred temperature range.
 
 # Features
@@ -27,3 +27,7 @@ Weather Data Retrieval: The agent connects to a free weather API(openweather) to
 Continuous Monitoring: The agent continuously monitors the temperature in the chosen location to ensure that users are promptly notified if it goes beyond their set thresholds.
 
 Alerts and Notifications: When the current temperature falls below the minimum or exceeds the maximum threshold, the agent triggers an alert or notification to inform the user.
+# How to use
+1. First obtain an API key from openweather, https://openweathermap.org/api, sign in/create an account to generate an API Key
+2. After obtaining the API Key, replace it in this line, found in **src/agents/Scripts/APICall.py**
+`API_KEY ="ENTER_YOUR_API_KEY"`
