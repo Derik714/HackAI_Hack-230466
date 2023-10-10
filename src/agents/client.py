@@ -4,7 +4,7 @@ import time
 from uagents.setup import fund_agent_if_low
 import sys
 from termcolor import colored
-
+#Below we are defining a client agent, with an endpoint http://127.0.0.1:8000/submit. We are using this agent to send the Value of current temperature to the agent in src/agents/Alert.py
 client_agent = Agent(name = "Bob",port = 8000,seed = "Bob secret phase",endpoint=["http://127.0.0.1:8000/submit"])
 RECIPIENT_ADDRESS = "agent1q2kxet3vh0scsf0sm7y2erzz33cve6tv5uk63x64upw5g68kr0chkv7hw50"
 class Message(Model):
