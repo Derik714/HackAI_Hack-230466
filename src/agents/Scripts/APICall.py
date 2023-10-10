@@ -1,6 +1,6 @@
 import requests
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather?"
-API_KEY ="d5d110b46dc686de57c9168f304a894d"
+API_KEY ="ENTER_YOUR_API_KEY"
 def KtoCandF(temp):
     Tc = temp-273.15
     Tf = Tc*(9/5)+32
