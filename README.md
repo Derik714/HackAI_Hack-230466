@@ -2,7 +2,7 @@
 
 ## Temperature Alert Agent
 
-The Temperature Alert Agent is a robust tool built using the uAgent library, designed to empower users by providing real-time weather updates for their chosen locations. This project offers a personalized temperature monitoring system, ensuring users receive timely alerts when the weather conditions fall outside their preferred temperature range.
+The Temperature Alert Agent is a robust tool built using the uAgent library, designed to empower users by providing real-time temperature updates for their chosen locations. This project offers a personalized temperature monitoring system, ensuring users receive timely alerts when the weather conditions fall outside their preferred temperature range.
 
 ## Features
 
